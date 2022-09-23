@@ -30,23 +30,25 @@ public class GuessingGame {
         System.out.println("Try to guess my number");
 
         // Create a while loop, and set the condition to correctGuess being equal to false
+            // inc increment by 1
+            // Create a try -catch block
+                // try - Set guess equal to input.nextInt()
+                // catch - Exception e
+                    // Create a new String called badInput and set it to input.next()
+                    // Use continue to skip back to the beginning of the while loop
 
         while (correctGuess == false) {
 
-            // increment by 1
             increment++;
 
-            // Create a try statement
             try {
-                // Set guess equal to input.nextInt()
                 guess = input.nextInt();
+
             } catch (Exception e) {
 
-                // Create a new String called badInput and set it to input.next()
                 String badInput = input.next();
                 System.out.println("That's not an integer, try again.");
 
-                // Use continue to skip back to the beginning of the while loop
                 continue;
             }
 
@@ -59,6 +61,7 @@ public class GuessingGame {
             // Use an else-if statement to check if the guess is equal to number
                 // Print “Well done, name! You found my number in increment tries!”
                 // Set correctGuess equal to true
+
             if ( guess > 100 || guess < 1 ) {
                 System.out.println("Your guess is out of range. Please try again.");
             } else if ( guess > number ) {
