@@ -123,8 +123,8 @@ public class MarsExpedition {
         // “nGO GO GO!”
 
         System.out.println("\nYour expedition team is now ready" +
-                "\nLed by " + name + " with teamSize teammates." +
-                "\nTo explore the surface of Mars using " +  vehicleChoice + "." +
+                "\nLed by " + name + " with " + teamSize + " teammates." +
+                "\nTo explore the surface of Mars using a " +  vehicleChoice + "." +
                 "\nExploration team heads out in" +
                 "\n5...." +
                 "\n4...." +
@@ -133,6 +133,7 @@ public class MarsExpedition {
                 "\n1...." +
                 "\nGO GO GO!");
     }
+
 
     // Return to the Mars file and call a new MarsExpedition constructor
 }
