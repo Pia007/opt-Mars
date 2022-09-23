@@ -36,6 +36,9 @@ public class Mars {
 
         // Call a function called LandingCheck() that has a parameter of 100, returns boolean, and set it equal to Landing
         Landing = LandingCheck(100);
+
+        // Run the GuessingGame by calling a new GuessingGame constructor
+        new GuessingGame();
     }
 
     // Create a public static void function called LandingCheck with an int parameter called Loops
