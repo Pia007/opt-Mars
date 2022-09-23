@@ -69,7 +69,7 @@ public class GuessingGame {
             } else if ( guess < number ) {
                 System.out.println("Your guess is too low. Please try again.");
             } else if ( guess == number ) {
-                System.out.println("Well done, " + name + "! You found my number in " + increment + " tries!");
+                System.out.println("Well done, " + name + "! You found my number in " + increment + " tries!" + "\n");
 
                 correctGuess = true;
             }
