@@ -42,6 +42,9 @@ public class Mars {
 
         // call a new MarsExpedition constructor
         new MarsExpedition();
+
+        // call a new FindingsList constructor
+        new FindingsLists();
     }
 
     // Create a public static void function called LandingCheck with an int parameter called Loops

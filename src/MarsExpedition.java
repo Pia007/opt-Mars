@@ -1,5 +1,3 @@
-import com.sun.security.jgss.GSSUtil;
-
 import java.util.Scanner;
 
 public class MarsExpedition {
@@ -38,8 +36,8 @@ public class MarsExpedition {
 
         String excited = input.nextLine();
 
-
-        // Create an if statement that checks if excited is equal to Y ignoring case
+        // Check:
+        // if excited is equal to Y ignoring case
             // Print “I knew you would say that. You are team leader for a reason.”
         // Use an else statement for everything else
             // Print “To bad you are team leader. You have to go.”
@@ -57,14 +55,14 @@ public class MarsExpedition {
         int teamSize = input.nextInt();
         input.nextLine();
 
-
-        // Use an if statement to check if teamSize is greater than 2
+        // Check:
+        // if teamSize is greater than 2
             // Print “That’s way to many people. We can only send 2 more members.”
             // Set teamSize equal to 2
-        // Use an else-if statement to check if teamSize is less than 2
+        // else-if teamSize is less than 2
             // Print “That’s not enough people. We need you and 2 more members.”
             // Set teamSize equal to 2
-        // Use an else if statement to check if teamSize equals 2
+        // else if teamSize equals 2
             // Print “That’s a perfect sized team. Good job.”
         if (teamSize > 2) {
             System.out.println("\nThat’s way to many people. We can only send 2 more members.");
@@ -91,15 +89,18 @@ public class MarsExpedition {
                 "\nC: A Honda Civic");
 
         // Create a String variable named vehicleChoice and set it equal to input.nextLine()
-        // Use an if statement to check if vehicleChoice is equal to A ignoring case
-            // set vehicleChoice equal to “Mars Roover”
-        // Use an else if statement to check if vehicleChoice is equal to B ignoring case
-            // set vehicleChoice equal to “Chevy Silverado”
-        // Use an else if statement to check if vehicleChoice is equal to C ignoring case
-            // set vehicleChoice equal to “Honda Civic”
-        // Use an else statement for if vehicleChoice does not equal any of the above
-            // set vehicleChoice equal to “your feet”
         String vehicleChoice = input.nextLine();
+
+        // Check:
+        //if vehicleChoice is equal to A ignoring case
+            // set vehicleChoice equal to “Mars Roover”
+        // else if vehicleChoice is equal to B ignoring case
+            // set vehicleChoice equal to “Chevy Silverado”
+        // else if vehicleChoice is equal to C ignoring case
+            // set vehicleChoice equal to “Honda Civic”
+        // otherwise vehicleChoice does not equal any of the above
+            // set vehicleChoice equal to “your feet”
+
 
         if (vehicleChoice.equalsIgnoreCase("A")) {
             vehicleChoice = "Mars Rover";
@@ -133,7 +134,6 @@ public class MarsExpedition {
                 "\n1...." +
                 "\nGO GO GO!");
     }
-
 
     // Return to the Mars file and call a new MarsExpedition constructor
 }
