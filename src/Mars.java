@@ -11,7 +11,7 @@ public class Mars {
         ShipFood = (ShipFood - 2 *(ShipPopulation * 0.75));
         // ShipFood = ShipFood - (ShipPopulation * 0.75);
 
-        // Print the amount of food that is left
+        // Amount of food left
         System.out.println(ShipFood);
 
         // extra crate of food increases ShipFood by 50%
@@ -23,18 +23,17 @@ public class Mars {
         ShipPopulation += 5;
         System.out.println(ShipPopulation);
 
-        // Choose where you want the ship to land. The Hill, The Plain, or The Ocean.
-        // Create a String value called LandingLocation and set it equal to “The Hill” or “The Plain” or “The Ocean”
         String LandingLocation = "The Ocean";
 
-        // Create an if-else statement. That checks to see if the LandingLocation is equal to “The Plain” ignoring case
+        // Check:
+        //  if the LandingLocation is equal to “The Plain” ignoring case
         if (LandingLocation.equalsIgnoreCase("The Plain")) {
             System.out.println("Bbzzz Landing on the Plain!!");
         } else {
             System.out.println("ERROR!!! Flight plan already set. Landing on the Plain.");
         }
 
-        // Call a function called LandingCheck() that has a parameter of 100, returns boolean, and set it equal to Landing
+        // LandingCheck() that has a parameter of 100, returns boolean, and set it equal to Landing
         Landing = LandingCheck(100);
 
         // call a new GuessingGame constructor
@@ -49,7 +48,8 @@ public class Mars {
 
     // Create a public static void function called LandingCheck with an int parameter called Loops
     // Create a for loop, i = 0, loops until i is equal to Loops and inc by 1
-    // Check if i is divisible by 3 and divisible by 5, print "Keep Center"
+    // Check
+    // if i is divisible by 3 and divisible by 5, print "Keep Center"
     // Else if i is divisible by 5, print "Right"
     // Else if i is divisible by 3, print "Left"
     // Otherwise print "Calculating"

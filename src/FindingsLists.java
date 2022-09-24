@@ -5,18 +5,16 @@ import java.util.Scanner;
 
 public class FindingsLists {
 
-    // create a public FindingsLists constructor
+    // constructor
     public FindingsLists() throws InterruptedException {
 
         // stop the terminal for half a second
             // need to use an exception in the constructor declaration
         Thread.sleep(500);
 
-        // Print “Welcome back from your expedition. Time to catalog everything you found,”
-        // Create an Arraylist
-        // Print “Rock data downloaded.”
         System.out.println("\nWelcome back from your expedition. Time to catalog everything you found,");
 
+        // rockList
         ArrayList<String> rockList = new ArrayList<>();
 
         System.out.println("\nRock data downloaded.");
@@ -29,12 +27,9 @@ public class FindingsLists {
 
         System.out.println(rockList);
 
-        // Print “Wait a second that last one is not a rock we need to delete that one from the list.”
-        // Remove “not rock” from the rockList ArrayList by using rockList.remove()
-        // Print the rockList;
-        // Print "Perfect"
         System.out.println("\nWait a second that last one is not a rock we need to delete that one from the list.");
 
+        //remove "not rock"
         rockList.remove(3);
 
         System.out.println("\n" + rockList);
@@ -58,18 +53,17 @@ public class FindingsLists {
         fossilDirectory.put("Fish Fossil", "The fossil is vaguely fish shaped implies there was once water.");
         fossilDirectory.put("Tooth Fossil", "The tooth from an unknown fossil");
 
-        // Print “Which of the fossils would you like to learn more about (Spelling and Spacing is important)?”
         System.out.println("\nWhich of the fossils would you like to learn more about (Spelling and Spacing is important)?");
 
-        // Create a scanner input object
-        // Create a String variable called fossilChoice and set it equal to input.nextLine()
+
         Scanner input = new Scanner(System.in);
+
         String fossilChoice = input.nextLine();
 
         // Check
-            // if fossilChoice equals “Bird Fossil” Print “Fossil: fossilChoice nDescription: fossilDirectory.get(fossilChoice)
-            // else if fossilChoice equals “Fish Fossil” Print “Fossil: fossilChoice nDescription: fossilDirectory.get(fossilChoice)
-            // else if fossilChoice equals “Tooth Fossil” Print “Fossil: fossilChoice nDescription: fossilDirectory.get(fossilChoice)
+            // if fossilChoice equals “Bird Fossil”,  Print “Fossil: fossilChoice nDescription: fossilDirectory.get(fossilChoice)
+            // else if fossilChoice equals “Fish Fossil”,  Print “Fossil: fossilChoice nDescription: fossilDirectory.get(fossilChoice)
+            // else if fossilChoice equals “Tooth Fossil”, Print “Fossil: fossilChoice nDescription: fossilDirectory.get(fossilChoice)
 
         if (fossilChoice.equalsIgnoreCase("Bird Fossil")) {
             System.out.println("Fossil: " + fossilChoice +
@@ -100,11 +94,12 @@ public class FindingsLists {
         suppliesUsed.add("Food");
         suppliesUsed.add("Water");
 
-        //Print what is leftover
+        // what is leftover?
+            // remove items that suppliesBrought and suppliesUsed share in common
         suppliesBrought.removeAll(suppliesUsed);
 
+        // print what's suppliesBrought set
         for(String sb: suppliesBrought)
             System.out.println("\nThere is only " + sb + " left.");
-
     }
 }
